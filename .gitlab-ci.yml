@@ -34,7 +34,7 @@ deployGatsby:
   # Inject the remote's private key
   - echo -n "$SSH_PRIVATE_KEY" | tr -d '\r'
   - echo "========================="
-  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add ~/.ssh/deploy_key - > /dev/null
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
   - mkdir -p ~/.ssh
   - chmod 700 ~/.ssh
   # echo "$SSH_KNOWN_HOSTS"
