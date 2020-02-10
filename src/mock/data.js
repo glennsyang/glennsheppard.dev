@@ -86,6 +86,11 @@ export const footerData = {
       name: 'gitlab',
       url: 'https://gitlab.com/gsheppard.yang',
     },
+    {
+      id: uuidv1(),
+      name: 'github',
+      url: 'https://github.com/glennsyang',
+    },
   ],
 };
 

@@ -22,10 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // The property ID; the tracking code won't be generated without it
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
         trackingId: 'UA-158115571-1',
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
       },
     },
     {
