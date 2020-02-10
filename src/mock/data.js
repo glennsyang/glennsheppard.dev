@@ -74,7 +74,7 @@ export const footerData = {
     {
       id: uuidv1(),
       name: 'twitter',
-      url: 'https://mobile.twitter.com/alba_status',
+      url: 'https://twitter.com/glennsheppard15',
     },
     {
       id: uuidv1(),
