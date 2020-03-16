@@ -51,13 +51,14 @@ export const projectsData = [
   },
   {
     id: uuidv1(),
-    img: 'job-search.png',
-    title: 'Entry Level Software Jobs',
-    info: 'Listing of entry level software jobs from Github Jobs and Remote OK.',
+    img: 'ecom-discover.png',
+    title: 'Ecom Discover',
+    info:
+      'A collection of e-commerce resources. Primarily related to FBA, but also touching on many other aspects of e-commerce software and tools. Crowd-sourced searchable reviews from community',
     info2:
-      'Front-end developed in React. Back-end API uses Express. Pulls from Github Jobs and RemoteOK public APIs. Clicking on the job listing opens modal window where you can apply directly to the job. Ability to filter the job listings by Location.',
-    url: 'https://glennsheppard.dev',
-    repo: 'https://gitlab.com/gsheppard.yang/job-search-app', // if no repo, the button will not show up
+      'Front-end developed in React with Gatsby and Tailwind CSS. Back-end is a Firebase Cloud Firestore. User management/authentication through Firebase Authentication. React Hook Form enables user to submit and rate e-commerce tools & services.',
+    url: 'https://ecomdiscover.com',
+    repo: 'https://gitlab.com/gsheppard.yang/eseller-tools-app', // if no repo, the button will not show up
   },
 ];
 
