@@ -1,4 +1,4 @@
-# My Developer Portfolio website ⚡️ [![GitHub](https://img.shields.io/github/license/cobidev/gatsby-simplefolio?color=blue)]
+# My Developer Portfolio website ⚡️ ![GitHub](https://img.shields.io/github/license/cobidev/gatsby-simplefolio?color=blue)
 
 ## A clean, beautiful and responsive portfolio
 
