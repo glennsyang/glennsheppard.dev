@@ -1,4 +1,4 @@
-import uuidv1 from 'uuid/v1';
+import { v4 } from 'uuid';
 
 // HEAD DATA
 export const headData = {
@@ -30,7 +30,7 @@ export const aboutData = {
 // PROJECTS DATA
 export const projectsData = [
   {
-    id: uuidv1(),
+    id: v4(),
     img: 'conspac.png',
     title: 'Conspac Enterprises Ltd.',
     info:
@@ -40,7 +40,7 @@ export const projectsData = [
     repo: 'https://gitlab.com/gsheppard.yang/conspac', // if no repo, the button will not show up
   },
   {
-    id: uuidv1(),
+    id: v4(),
     img: 'screenshot_.png',
     title: 'Time-Clocking app',
     info: 'Time-Clocking app for event staffing company based in the UK.',
@@ -50,9 +50,9 @@ export const projectsData = [
     repo: 'https://gitlab.com/flaireventstaffing/time-clocking-app', // if no repo, the button will not show up
   },
   {
-    id: uuidv1(),
+    id: v4(),
     img: 'ecom-discover.png',
-    title: 'Ecom Discover',
+    title: 'EcomDiscover',
     info:
       'A collection of e-commerce resources. Primarily related to FBA, but also touching on many other aspects of e-commerce software and tools. Crowd-sourced searchable reviews from community.',
     info2:
@@ -73,22 +73,22 @@ export const contactData = {
 export const footerData = {
   networks: [
     {
-      id: uuidv1(),
+      id: v4(),
       name: 'twitter',
       url: 'https://twitter.com/glennsheppard15',
     },
     {
-      id: uuidv1(),
+      id: v4(),
       name: 'linkedin',
       url: 'https://www.linkedin.com/in/glenn-sheppard-a73a6787/',
     },
     {
-      id: uuidv1(),
+      id: v4(),
       name: 'gitlab',
       url: 'https://gitlab.com/gsheppard.yang',
     },
     {
-      id: uuidv1(),
+      id: v4(),
       name: 'github',
       url: 'https://github.com/glennsyang',
     },
