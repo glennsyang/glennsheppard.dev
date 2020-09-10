@@ -1,6 +1,9 @@
-# My Developer Portfolio website ⚡️ ![GitHub](https://img.shields.io/github/license/cobidev/gatsby-simplefolio?color=blue)
+# My Developer Portfolio website ⚡️
 
 ## A clean, beautiful and responsive portfolio
+
+Glenn Sheppard - Software & Web Developer
+Have a project you'd like to discuss? Let's chat!
 
 ## Technologies used 🛠️
 
@@ -12,7 +15,7 @@
 
 ## Status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2365af6f-820a-4fb8-83e6-69a66f686dfe/deploy-status)](https://app.netlify.com/sites/gatsby-simplefolio/deploys)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/glennsyang/glennsheppard.dev/Build%20&%20Deploy%20Site/release) ![David](https://img.shields.io/david/dev/glennsyang/glennsheppard.dev) [![HitCount](http://hits.dwyl.com/glennsyang/glennsheppard.dev.svg)](http://hits.dwyl.com/glennsyang/glennsheppard.dev)
 
 ## Acknowledgments 🎁
 
