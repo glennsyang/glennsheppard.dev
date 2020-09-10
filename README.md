@@ -3,6 +3,7 @@
 ## A clean, beautiful and responsive portfolio
 
 Glenn Sheppard - Software & Web Developer
+
 Have a project you'd like to discuss? Let's chat!
 
 ## Technologies used 🛠️
