@@ -1,4 +1,4 @@
-# Personal Developer Portfolio website ⚡️
+# Personal Developer Portfolio site ⚡️
 
 ## A clean, beautiful and responsive portfolio
 
@@ -16,7 +16,7 @@ Have a project you'd like to discuss? Let's chat!
 
 ## Status
 
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/glennsyang/glennsheppard.dev/Build%20&%20Deploy%20Site/release) ![David](https://img.shields.io/david/dev/glennsyang/glennsheppard.dev) [![HitCount](http://hits.dwyl.com/glennsyang/glennsheppard.dev.svg)](http://hits.dwyl.com/glennsyang/glennsheppard.dev)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/glennsyang/glennsheppard.dev/Build%20&%20Deploy%20Site/master) ![David](https://img.shields.io/david/dev/glennsyang/glennsheppard.dev) [![HitCount](http://hits.dwyl.com/glennsyang/glennsheppard.dev.svg)](http://hits.dwyl.com/glennsyang/glennsheppard.dev)
 
 ## Acknowledgments 🎁
 
