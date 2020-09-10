@@ -56,7 +56,7 @@ export const projectsData = [
     info:
       'A collection of e-commerce resources. Primarily related to FBA, but also touching on many other aspects of e-commerce software and tools. Crowd-sourced searchable reviews from community.',
     info2:
-      'Front-end developed in React with Gatsby and Tailwind CSS. Back-end is a Firebase Cloud Firestore. User management / authentication through Firebase Authentication. React Hook Form enables users to submit, rate and review e-commerce tools & services.',
+      'Front-end developed in React with Gatsby and Tailwind CSS. Back-end is a Firebase Cloud Firestore. User authentication through Firebase Authentication. React Hook Form enables users to submit, rate and review e-commerce tools & services.',
     url: 'https://ecomdiscover.com',
     repo: 'https://github.com/glennsyang/ecomdiscover', // if no repo, the button will not show up
   },
