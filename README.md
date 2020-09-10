@@ -1,4 +1,4 @@
-# My Developer Portfolio website ⚡️
+# Personal Developer Portfolio website ⚡️
 
 ## A clean, beautiful and responsive portfolio
 
