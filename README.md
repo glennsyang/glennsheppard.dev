@@ -1,5 +1,7 @@
 # Personal Developer Portfolio site ⚡️
 
+<img src="/src/images/favicon.png" alt="Developer Logo" height="128" />
+
 ## A clean, beautiful and responsive portfolio
 
 Glenn Sheppard - Software & Web Developer
