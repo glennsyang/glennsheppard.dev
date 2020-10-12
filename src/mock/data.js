@@ -84,11 +84,6 @@ export const footerData = {
     },
     {
       id: v4(),
-      name: 'gitlab',
-      url: 'https://gitlab.com/gsheppard.yang',
-    },
-    {
-      id: v4(),
       name: 'github',
       url: 'https://github.com/glennsyang',
     },
