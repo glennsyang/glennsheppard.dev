@@ -1,0 +1,18 @@
+---
+interface Props {
+  /** Direction of the reveal on desktop */
+  direction?: 'up' | 'left' | 'right';
+  /** Delay in ms before the reveal transition starts */
+  delay?: number;
+  /** Extra classes applied to the wrapper */
+  class?: string;
+}
+
+const { direction = 'up', delay = 0, class: className = '' } = Astro.props;
+
+const base = direction === 'left' ? 'reveal reveal-left' : direction === 'right' ? 'reveal reveal-right' : 'reveal';
+const style = delay ? `--reveal-delay: ${delay}ms;` : undefined;
+---
+<div class:list={[base, className]} style={style}>
+  <slot />
+</div>

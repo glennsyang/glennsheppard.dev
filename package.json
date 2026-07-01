@@ -1,77 +1,28 @@
 {
   "name": "glennsheppard.dev",
+  "version": "2.0.0",
+  "type": "module",
   "private": true,
-  "description": "My Developer Portfolio site",
-  "version": "0.1.0",
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "bootstrap": "^4.5.3",
-    "gatsby": "^2.29.1",
-    "gatsby-cli": "^2.16.1",
-    "gatsby-image": "^2.8.0",
-    "gatsby-plugin-google-gtag": "^2.5.0",
-    "gatsby-plugin-manifest": "^2.9.0",
-    "gatsby-plugin-offline": "^3.7.0",
-    "gatsby-plugin-react-helmet": "^3.7.0",
-    "gatsby-plugin-sass": "^2.8.0",
-    "gatsby-plugin-sharp": "^2.11.1",
-    "gatsby-source-filesystem": "^2.8.0",
-    "gatsby-transformer-sharp": "^2.9.0",
-    "global": "^4.4.0",
-    "node-sass": "^4.13.1",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-bootstrap": "^1.4.0",
-    "react-dom": "^17.0.1",
-    "react-github-btn": "^1.2.0",
-    "react-helmet": "^6.1.0",
-    "react-reveal": "^1.2.2",
-    "react-tilt": "^0.1.4",
-    "uuid": "^8.3.2"
+    "@astrojs/sitemap": "^3.2.1",
+    "astro": "^5.1.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.15.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^7.0.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.0",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^4.3.6",
-    "lint-staged": "^10.5.3",
-    "prettier": "^2.2.1"
+    "@astrojs/check": "^0.9.4",
+    "@tailwindcss/vite": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/glennsyang/glennsheppard.dev"
-  },
-  "bugs": {
-    "url": "https://github.com/glennsyang/glennsheppard.dev/issues"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.+(js|jsx)": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.+(json|css|md)": [
-      "prettier --write",
-      "git add"
-    ]
+  "allowScripts": {
+    "esbuild@0.25.12": true,
+    "esbuild@0.27.7": true,
+    "sharp@0.34.5": true
   }
 }

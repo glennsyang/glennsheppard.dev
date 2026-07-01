@@ -1,0 +1,23 @@
+---
+import Reveal from './Reveal.astro';
+import { heroData } from '../data/content';
+
+const { title, name, subtitle, cta } = heroData;
+---
+<section id="hero" class="jumbotron">
+  <div class="container-x">
+    <Reveal direction="left" delay={500}>
+      <h1 class="hero-title">
+        {title}
+        <span class="text-color-main">{name}</span>
+        <br />
+        {subtitle}
+      </h1>
+    </Reveal>
+    <Reveal direction="left" delay={1000}>
+      <p class="hero-cta">
+        <a class="cta-btn cta-btn--hero" href="#about">{cta}</a>
+      </p>
+    </Reveal>
+  </div>
+</section>

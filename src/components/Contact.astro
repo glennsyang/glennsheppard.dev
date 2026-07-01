@@ -1,0 +1,25 @@
+---
+import Title from './Title.astro';
+import Reveal from './Reveal.astro';
+import { contactData } from '../data/content';
+
+const { cta, btn, email } = contactData;
+---
+<section id="contact">
+  <div class="container-x">
+    <Title title="Contact" />
+    <Reveal direction="up" delay={800}>
+      <div class="contact-wrapper">
+        <p class="contact-wrapper__text">{cta}</p>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          class="cta-btn cta-btn--resume"
+          href={`mailto:${email}`}
+        >
+          {btn}
+        </a>
+      </div>
+    </Reveal>
+  </div>
+</section>

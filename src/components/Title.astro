@@ -1,0 +1,12 @@
+---
+import Reveal from './Reveal.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+<Reveal direction="up" delay={300}>
+  <h2 class="section-title">{title}</h2>
+</Reveal>
