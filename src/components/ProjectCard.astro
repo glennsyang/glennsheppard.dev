@@ -1,7 +1,7 @@
 ---
-import { Image } from 'astro:assets';
-import Reveal from './Reveal.astro';
-import type { Project } from '../data/content';
+import { Image } from "astro:assets";
+import Reveal from "./Reveal.astro";
+import type { Project } from "../data/content";
 
 interface Props {
   project: Project;
@@ -10,6 +10,7 @@ interface Props {
 const { project } = Astro.props;
 const { title, info, info2, url, repo, img } = project;
 ---
+
 <div class="project-row grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
   <div class="lg:col-span-4">
     <Reveal direction="left" delay={500}>
@@ -27,25 +28,37 @@ const { title, info, info2, url, repo, img } = project;
         >
           See Live
         </a>
-        {repo && (
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            class="cta-btn text-color-main"
-            href={repo}
-          >
-            Source Code
-          </a>
-        )}
+        {
+          repo && (
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta-btn text-color-main"
+              href={repo}
+            >
+              Source Code
+            </a>
+          )
+        }
       </div>
     </Reveal>
   </div>
   <div class="lg:col-span-8">
     <Reveal direction="right" delay={1000}>
       <div class="project-wrapper__image">
-        <a href={url} target="_blank" aria-label="Project Link" rel="noopener noreferrer">
+        <a
+          href={url}
+          target="_blank"
+          aria-label="Project Link"
+          rel="noopener noreferrer"
+        >
           <div class="thumbnail rounded">
-            <Image src={img} alt={title} widths={[600, 900, 1200]} sizes="(max-width: 900px) 100vw, 66vw" />
+            <Image
+              src={img}
+              alt={title}
+              widths={[600, 900, 1200]}
+              sizes="(max-width: 900px) 100vw, 66vw"
+            />
           </div>
         </a>
       </div>
