@@ -1,0 +1,6 @@
+# Prettier is only ever invoked here with an explicit **/*.astro glob
+# (oxfmt handles all other file types), but keep build output excluded
+# in case Prettier is ever run without an explicit pattern.
+dist
+.astro
+node_modules

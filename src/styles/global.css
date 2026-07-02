@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   --color-primary: #0250b0;
@@ -7,13 +7,13 @@
   --color-dark-grey: #333333;
   --color-dark-blue-text: #272341;
 
-  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
 
   /* Match original SCSS breakpoints (which use max-width) as Tailwind's min-width scale */
-  --breakpoint-sm: 600px;   /* was phone */
-  --breakpoint-md: 900px;   /* was tab-port */
-  --breakpoint-lg: 1200px;  /* was tab-land */
-  --breakpoint-xl: 1800px;  /* was big-desktop */
+  --breakpoint-sm: 600px; /* was phone */
+  --breakpoint-md: 900px; /* was tab-port */
+  --breakpoint-lg: 1200px; /* was tab-land */
+  --breakpoint-xl: 1800px; /* was big-desktop */
 }
 
 @layer base {
@@ -24,7 +24,7 @@
   }
 
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     color: var(--color-dark-blue-text);
   }
@@ -52,11 +52,7 @@
   }
 
   .text-color-main {
-    background-image: linear-gradient(
-      135deg,
-      var(--color-primary) 0%,
-      var(--color-secondary) 100%
-    );
+    background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -85,7 +81,7 @@
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
   }
   .cta-btn::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 0;
@@ -101,29 +97,17 @@
 
   /* Hero-style CTA (gradient text + border) */
   .cta-btn--hero {
-    background-image: linear-gradient(
-      135deg,
-      var(--color-primary) 0%,
-      var(--color-secondary) 100%
-    );
+    background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
     border: 2px solid transparent;
-    border-image: linear-gradient(
-      135deg,
-      var(--color-primary) 0%,
-      var(--color-secondary) 100%
-    );
+    border-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     border-image-slice: 1;
   }
   .cta-btn--hero::after {
-    background-image: linear-gradient(
-      135deg,
-      var(--color-primary) 0%,
-      var(--color-secondary) 100%
-    );
+    background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   }
   .cta-btn--hero:hover {
     -webkit-text-fill-color: #fff;
@@ -265,11 +249,7 @@ section {
 /* ABOUT */
 #about {
   background-color: var(--color-primary);
-  background-image: linear-gradient(
-    135deg,
-    var(--color-primary) 0%,
-    var(--color-secondary) 100%
-  );
+  background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   color: #fff;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
@@ -405,11 +385,7 @@ section {
 
 /* CONTACT */
 #contact {
-  background-image: linear-gradient(
-    135deg,
-    var(--color-primary) 0%,
-    var(--color-secondary) 100%
-  );
+  background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   padding: 15rem 0 10rem 0;
   margin-top: -10rem;
@@ -507,14 +483,22 @@ section {
   margin-left: auto;
 }
 @media (min-width: 576px) {
-  .container-x { max-width: 540px; }
+  .container-x {
+    max-width: 540px;
+  }
 }
 @media (min-width: 768px) {
-  .container-x { max-width: 720px; }
+  .container-x {
+    max-width: 720px;
+  }
 }
 @media (min-width: 992px) {
-  .container-x { max-width: 960px; }
+  .container-x {
+    max-width: 960px;
+  }
 }
 @media (min-width: 1200px) {
-  .container-x { max-width: 1140px; }
+  .container-x {
+    max-width: 1140px;
+  }
 }
