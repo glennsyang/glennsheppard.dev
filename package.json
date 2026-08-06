@@ -14,7 +14,8 @@
     "test:watch": "vitest",
     "lint": "oxlint . && eslint \"**/*.astro\"",
     "format": "oxfmt . && prettier --write \"**/*.astro\"",
-    "format:check": "oxfmt --check . && prettier --check \"**/*.astro\""
+    "format:check": "oxfmt --check . && prettier --check \"**/*.astro\"",
+    "update-deps": "npm outdated || npm update"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
