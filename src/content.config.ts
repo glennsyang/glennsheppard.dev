@@ -3,11 +3,9 @@ import { glob } from "astro/loaders";
 import { z } from "astro/zod";
 
 const nonEmptyString = z.string().trim().min(1);
-const httpUrl = z
-  .url()
-  .refine((value) => /^https?:\/\//.test(value), {
-    message: "Expected an HTTP(S) URL",
-  });
+const httpUrl = z.url().refine((value) => /^https?:\/\//.test(value), {
+  message: "Expected an HTTP(S) URL",
+});
 
 const head = defineCollection({
   loader: glob({ base: "./src/content/head", pattern: "**/*.json" }),

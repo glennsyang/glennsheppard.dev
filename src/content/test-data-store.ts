@@ -79,14 +79,8 @@ export async function installContentTestData() {
         ],
       ]),
     ],
-    [
-      "contact",
-      new Map([["main", entry("main", contact, "src/content/contact/main.json")]]),
-    ],
-    [
-      "footer",
-      new Map([["main", entry("main", footer, "src/content/footer/main.json")]]),
-    ],
+    ["contact", new Map([["main", entry("main", contact, "src/content/contact/main.json")]])],
+    ["footer", new Map([["main", entry("main", footer, "src/content/footer/main.json")]])],
   ]);
 
   globalDataStore.set(await ImmutableDataStore.fromMap(store));

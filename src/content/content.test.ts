@@ -30,12 +30,7 @@ describe("singleton content entries", () => {
       expect(value.trim()).not.toBe("");
     }
 
-    for (const value of [
-      hero.data.title,
-      hero.data.name,
-      hero.data.subtitle,
-      hero.data.cta,
-    ]) {
+    for (const value of [hero.data.title, hero.data.name, hero.data.subtitle, hero.data.cta]) {
       expect(value.trim()).not.toBe("");
     }
 
@@ -73,9 +68,7 @@ describe("projects collection", () => {
     const orders = projects.map((project) => project.data.order);
 
     expect(projects.length).toBeGreaterThan(0);
-    expect(new Set(projects.map((project) => project.id)).size).toBe(
-      projects.length,
-    );
+    expect(new Set(projects.map((project) => project.id)).size).toBe(projects.length);
     expect(new Set(orders).size).toBe(orders.length);
   });
 
@@ -111,12 +104,8 @@ describe("footer content", () => {
 
     const { networks } = footer.data;
     expect(networks.length).toBeGreaterThan(0);
-    expect(new Set(networks.map((network) => network.id)).size).toBe(
-      networks.length,
-    );
-    expect(new Set(networks.map((network) => network.name)).size).toBe(
-      networks.length,
-    );
+    expect(new Set(networks.map((network) => network.id)).size).toBe(networks.length);
+    expect(new Set(networks.map((network) => network.name)).size).toBe(networks.length);
 
     for (const network of networks) {
       expect(network.id).toBe(network.name);
