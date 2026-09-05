@@ -30,15 +30,14 @@ src/
 │   └── BaseLayout.astro
 ├── components/               # About, Contact, Footer, GithubButtons, Hero,
 │                              # ProjectCard, Projects, Reveal, Title (.astro)
-├── data/
-│   └── content.ts            # Site copy / project list, data-driven
+├── content/                  # JSON site copy / project entries, data-driven
 ├── styles/
 ├── scripts/
 └── assets/
 ```
 
-- `Reveal.astro` has a co-located `Reveal.test.ts`; `src/scripts/reveal.test.ts` and `src/data/content.test.ts` are the other two test files — tests live next to what they cover, not in a separate `tests/` tree.
-- `src/data/content.ts` is the place to change site copy/projects rather than editing markup directly in components.
+- `Reveal.astro` has a co-located `Reveal.test.ts`; `src/scripts/reveal.test.ts` and `src/content/content.test.ts` are the other two test files — tests live next to what they cover, not in a separate `tests/` tree.
+- `src/content/` is the place to change site copy/projects rather than editing markup directly in components.
 
 ---
 

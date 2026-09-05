@@ -1,8 +1,14 @@
 ---
-import { headData } from "../data/content";
+import { getEntry } from "astro:content";
 import "../styles/global.css";
 
-const { title, lang, description } = headData;
+const head = await getEntry("head", "site");
+
+if (!head) {
+  throw new Error("Missing head content entry");
+}
+
+const { title, lang, description } = head.data;
 ---
 
 <!doctype html>

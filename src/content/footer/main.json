@@ -1,0 +1,20 @@
+{
+  "networks": [
+    {
+      "id": "twitter",
+      "name": "twitter",
+      "url": "https://twitter.com/glennsheppard15"
+    },
+    {
+      "id": "linkedin",
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/glenn-sheppard-a73a6787/"
+    },
+    {
+      "id": "github",
+      "name": "github",
+      "url": "https://github.com/glennsyang"
+    }
+  ],
+  "githubButtonsEnabled": false
+}

@@ -1,8 +1,14 @@
 ---
+import { getEntry } from "astro:content";
 import GithubButtons from "./GithubButtons.astro";
-import { footerData, githubButtonsEnabled } from "../data/content";
 
-const { networks } = footerData;
+const footer = await getEntry("footer", "main");
+
+if (!footer) {
+  throw new Error("Missing footer content entry");
+}
+
+const { networks, githubButtonsEnabled } = footer.data;
 const year = new Date().getFullYear();
 
 const socialPaths: Record<string, string> = {

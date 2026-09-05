@@ -1,8 +1,14 @@
 ---
 import Reveal from "./Reveal.astro";
-import { heroData } from "../data/content";
+import { getEntry } from "astro:content";
 
-const { title, name, subtitle, cta } = heroData;
+const hero = await getEntry("hero", "main");
+
+if (!hero) {
+  throw new Error("Missing hero content entry");
+}
+
+const { title, name, subtitle, cta } = hero.data;
 ---
 
 <section id="hero" class="jumbotron">

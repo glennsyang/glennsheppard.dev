@@ -1,14 +1,18 @@
 ---
+import { getCollection } from "astro:content";
 import Title from "./Title.astro";
 import ProjectCard from "./ProjectCard.astro";
-import { projectsData } from "../data/content";
+
+const projects = (await getCollection("projects")).toSorted(
+  (first, second) => first.data.order - second.data.order,
+);
 ---
 
 <section id="projects">
   <div class="container-x">
     <div class="project-wrapper">
       <Title title="Projects" />
-      {projectsData.map((project) => <ProjectCard project={project} />)}
+      {projects.map((project) => <ProjectCard project={project} />)}
     </div>
   </div>
 </section>

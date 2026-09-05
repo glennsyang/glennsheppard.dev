@@ -1,0 +1,9 @@
+{
+  "order": 1,
+  "img": "../../assets/conspac.png",
+  "title": "Conspac Enterprises Ltd.",
+  "info": "Company that specializes in food and nutritional food supplements for humans and ingredients for fish and animal feed, particularly krill.",
+  "info2": "Website designed and developed with Gatsby and Bootstrap 4.",
+  "url": "https://conspac.com/",
+  "repo": "https://github.com/glennsyang/conspac"
+}

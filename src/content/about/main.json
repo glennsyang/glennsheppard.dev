@@ -1,0 +1,8 @@
+{
+  "img": "../../assets/profile_pic.jpg",
+  "imgAlt": "profile picture",
+  "paragraphOne": "I'm a passionate software developer, with years of experience specializing in C# and the .NET framework, developing several applications for Service Desk automation.",
+  "paragraphTwo": "I've worked in mobile app development as well! Using the Nativescript framework, I developed a cross-platform application in iOS and Android, thereby increasing my Javascript skills.",
+  "paragraphThree": "I also love web development! Which is why I built a few websites along the way. Lately, I've been really interested in React and GatsbyJS which are the basis for my latest project.",
+  "resume": ""
+}

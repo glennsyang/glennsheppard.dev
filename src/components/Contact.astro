@@ -1,9 +1,15 @@
 ---
+import { getEntry } from "astro:content";
 import Title from "./Title.astro";
 import Reveal from "./Reveal.astro";
-import { contactData } from "../data/content";
 
-const { cta, btn, email } = contactData;
+const contact = await getEntry("contact", "main");
+
+if (!contact) {
+  throw new Error("Missing contact content entry");
+}
+
+const { cta, btn, email } = contact.data;
 ---
 
 <section id="contact">

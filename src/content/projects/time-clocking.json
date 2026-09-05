@@ -1,0 +1,9 @@
+{
+  "order": 2,
+  "img": "../../assets/screenshot_.png",
+  "title": "Time-Clocking app",
+  "info": "Time-Clocking app for event staffing company based in the UK.",
+  "info2": "App developed using the Nativescript framework for cross-platform development in iOS and Android. Events and staff are populated from back-end API. Check-in, clock-in and clock-out staff and see their details. Submit report back to office with staff ratings, notes and client signature.",
+  "url": "https://eventstaffing.co.uk/",
+  "repo": "https://gitlab.com/flaireventstaffing/time-clocking-app"
+}
