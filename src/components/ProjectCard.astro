@@ -1,14 +1,14 @@
 ---
 import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
 import Reveal from "./Reveal.astro";
-import type { Project } from "../data/content";
 
 interface Props {
-  project: Project;
+  project: CollectionEntry<"projects">;
 }
 
 const { project } = Astro.props;
-const { title, info, info2, url, repo, img } = project;
+const { title, info, info2, url, repo, img } = project.data;
 ---
 
 <div class="project-row grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">

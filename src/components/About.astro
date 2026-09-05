@@ -1,11 +1,17 @@
 ---
 import { Image } from "astro:assets";
+import { getEntry } from "astro:content";
 import Title from "./Title.astro";
 import Reveal from "./Reveal.astro";
-import { aboutData } from "../data/content";
+
+const about = await getEntry("about", "main");
+
+if (!about) {
+  throw new Error("Missing about content entry");
+}
 
 const { img, imgAlt, paragraphOne, paragraphTwo, paragraphThree, resume } =
-  aboutData;
+  about.data;
 ---
 
 <section id="about">
