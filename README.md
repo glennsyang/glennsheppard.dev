@@ -19,6 +19,17 @@ Have a project you'd like to discuss? Let's chat!
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8e427aea-c471-4df8-a6b6-45f810117329/deploy-status)](https://app.netlify.com/sites/gallant-jones-cb9d3f/deploys)
 
+## Analytics and privacy
+
+Google Analytics 4 is enabled only in production builds when
+`PUBLIC_GA_MEASUREMENT_ID` is configured. Set that environment variable in the
+Netlify site's production environment; use [`.env.example`](.env.example) as
+the reference for its value. Analytics is deliberately disabled by `npm run dev`
+so local visits do not affect reporting.
+
+The site does not send personally identifiable information to GA4. Consent and
+cookie-policy requirements will be assessed separately in [issue #30](https://github.com/glennsyang/glennsheppard.dev/issues/30).
+
 ## License 📄
 
 All Rights Reserved © 2026 Glenn Sheppard. This code is provided for viewing only — see [LICENSE](LICENSE) for details.
