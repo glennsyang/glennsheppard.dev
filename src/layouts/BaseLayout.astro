@@ -9,6 +9,16 @@ if (!head) {
 }
 
 const { title, lang, description } = head.data;
+const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+const shouldLoadAnalytics = import.meta.env.PROD && Boolean(measurementId);
+const analyticsConfig = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", ${JSON.stringify(measurementId)});
+`;
 ---
 
 <!doctype html>
@@ -29,6 +39,18 @@ const { title, lang, description } = head.data;
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
       rel="stylesheet"
     />
+    {
+      shouldLoadAnalytics && (
+        <>
+          <script
+            async
+            is:inline
+            src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
+          />
+          <script is:inline set:html={analyticsConfig} />
+        </>
+      )
+    }
   </head>
   <body>
     <slot />
