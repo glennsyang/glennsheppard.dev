@@ -12,7 +12,9 @@ const projects = (await getCollection("projects")).toSorted(
   <div class="container-x">
     <div class="project-wrapper">
       <Title title="Projects" />
-      {projects.map((project) => <ProjectCard project={project} />)}
+      {projects.map((project) => (
+        <ProjectCard project={project} />
+      ))}
     </div>
   </div>
 </section>

@@ -37,20 +37,18 @@ const { img, imgAlt, paragraphOne, paragraphTwo, paragraphThree, resume } =
             <p class="about-wrapper__info-text">{paragraphOne}</p>
             <p class="about-wrapper__info-text">{paragraphTwo}</p>
             <p class="about-wrapper__info-text">{paragraphThree}</p>
-            {
-              resume && (
-                <span class="flex mt-3">
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="cta-btn cta-btn--resume"
-                    href={resume}
-                  >
-                    Resume
-                  </a>
-                </span>
-              )
-            }
+            {resume && (
+              <span class="flex mt-3">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--resume"
+                  href={resume}
+                >
+                  Resume
+                </a>
+              </span>
+            )}
           </div>
         </Reveal>
       </div>

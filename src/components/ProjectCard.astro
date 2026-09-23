@@ -28,18 +28,16 @@ const { title, info, info2, url, repo, img } = project.data;
         >
           See Live
         </a>
-        {
-          repo && (
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              class="cta-btn text-color-main"
-              href={repo}
-            >
-              Source Code
-            </a>
-          )
-        }
+        {repo && (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cta-btn text-color-main"
+            href={repo}
+          >
+            Source Code
+          </a>
+        )}
       </div>
     </Reveal>
   </div>
