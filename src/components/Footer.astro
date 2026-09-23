@@ -27,25 +27,23 @@ const backToTopPath =
 <footer class="footer navbar-static-bottom">
   <div class="container-x">
     <a href="#hero" aria-label="Back To Top" class="back-to-top">
-      <svg viewBox="0 0 24 24" aria-hidden="true" role="img"
-        ><path d={backToTopPath}></path></svg
-      >
+      <svg viewBox="0 0 24 24" aria-hidden="true" role="img">
+        <path d={backToTopPath}></path>
+      </svg>
     </a>
     <div class="social-links">
-      {
-        networks.map((network) => (
-          <a
-            href={network.url}
-            rel="noopener noreferrer"
-            target="_blank"
-            aria-label={network.name}
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true" role="img">
-              <path d={socialPaths[network.name]} />
-            </svg>
-          </a>
-        ))
-      }
+      {networks.map((network) => (
+        <a
+          href={network.url}
+          rel="noopener noreferrer"
+          target="_blank"
+          aria-label={network.name}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" role="img">
+            <path d={socialPaths[network.name]} />
+          </svg>
+        </a>
+      ))}
     </div>
     <hr />
     <p class="footer__text">© {year} - Glenn Sheppard</p>
