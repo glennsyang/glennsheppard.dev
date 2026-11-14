@@ -18,7 +18,7 @@
     "update-deps": "npm outdated || npm update"
   },
   "dependencies": {
-    "astro": "^7.4.2"
+    "astro": "^7.4.7"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
